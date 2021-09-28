@@ -7,32 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
     <style media="screen" type="text/css">
-        .container {
+        .container-1 {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
+            justify-content: center;
+            align-content: center;
             flex-wrap: wrap;
+            margin-top: 20px;
         }
+
         .item {
             margin-right: 20px;
         }
-        .item-top {
-            background: url('img/dynamic-wang-K8B2PjTPrdw-unsplash') no-repeat;
-            width: 20%;
-            height: 100px;
+
+        .item-top-1 {
+            background: url('img/img-1.jpg') no-repeat;
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
         }
-    
+
+        .item-top-2 {
+            background: url('img/img-2.jpg') no-repeat;
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
+        }
+
+        .item-top-3 {
+            background: url('img/img-3.jpg') no-repeat;
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
+        }
+
+        .item-top-4 {
+            background: url('img/img-4.jpg') no-repeat;
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
+        }
+
+        .container-2 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .item-wide {
+            background: url('img/img-5.jpg') no-repeat;
+            width: 660px;
+            height: 15vw;
+            background-size: 100%;
+        }
+        
+        .container-3 {
+           display: flex;
+           flex-wrap: nowrap;
+           justify-content: center; 
+        }
+
+        .item-bottom-1 {
+            background: url('img/img-6.jpg') no-repeat;
+            width: 150px;
+            background-size: 100%;
+        }
+
+        .item-bottom-1:nth-child(odd){
+            height: 150px;
+        }
+
+        .item-bottom-2 {
+            background: url('img/img-7.jpg') no-repeat;
+            width: 150px;
+            background-size: 100%;
+        }
+
+        .item-bottom-2:nth-child(even) {
+            height: 800px;
+        }
     </style>
 </head>
 
 <body>
-    <section class="container">
-        <div class="item item-top"></div>
-        <div class="item item-top"></div>
-        <div class="item item-top"></div>
-        <div class="item item-top"></div>
+    <section class="container-1">
+        <div class="item item-top-1"></div>
+        <div class="item item-top-2"></div>
+        <div class="item item-top-3"></div>
+        <div class="item item-top-4"></div>
+    </section>
+
+    <section class="container-2">
         <div class="item item-wide"></div>
+    </section>
+    <section class="container-3">
         <div class="item item-bottom-1"></div>
         <div class="item item-bottom-2"></div>
         <div class="item item-bottom-1"></div>
